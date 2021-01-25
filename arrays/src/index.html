@@ -1,0 +1,16 @@
+<div id='app'>
+  <span>Invite to the party : </span>
+  <span  v-for="option in options" :key="option">
+    <input v-model="checkedNames"
+           :id="option.value"
+           :value="option.value"
+           type="checkbox">
+    <label for="option.value">   
+      {{ option.value }} </label>   
+  </span>
+  <br>
+  <span> Invited people : 
+    {{ checkedNames }} </span>
+</div>
+           
+    

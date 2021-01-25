@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Arrays</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id='app'>
+  <span>Invite to the party : </span>
+  <span  v-for="option in options" :key="option">
+    <input v-model="checkedNames"
+           :id="option.value"
+           :value="option.value"
+           type="checkbox">
+    <label for="option.value">   
+      {{ option.value }} </label>   
+  </span>
+  <br>
+  <span> Invited people : 
+    {{ checkedNames }} </span>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/vue@next'></script><script  src="./script.js"></script>
+
+</body>
+</html>
