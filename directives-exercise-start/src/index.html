@@ -1,0 +1,17 @@
+<div id="app">
+  <div class="row">
+    <input v-model.number="num1" type = "number" />
+    <span>+</span>
+    <input v-model.number = "num2" type = "number" />
+    <span>=</span>
+  <span> {{ num1 + num2 }}
+  </div>
+  <div class="row second">
+    <select v-model = "book" >
+      <option disabled value = " ">Select taco </option>
+      <option> Fiction </option>
+      <option> Non-fiction </option>
+    </select>
+    <p v-if = "book">My favorite kind of book is {{ book }}</p>
+  </div>
+</div>
